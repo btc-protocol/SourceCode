@@ -105,13 +105,13 @@ contract BitcoinProtocol is StandardToken { // CHANGE THIS. Update the contract 
     // This is a constructor function
     // which means the following function name has to match the contract name declared above
     function BitcoinProtocol() {
-        balances[msg.sender] = 21000000000000000000000000000;               // Give the creator all initial tokens. This is set to 1000 for example. If you want your initial tokens to be X and your decimal is 5, set this value to X * 100000. (CHANGE THIS)
-        totalSupply = 21000000000000000000000000000;                        // Update total supply (1000 for example) (CHANGE THIS)
-        name = "Bitcoin Protocol";                                   // Set the name for display purposes (CHANGE THIS)
-        decimals = 18;                                               // Amount of decimals for display purposes (CHANGE THIS)
-        symbol = "BTP";                                             // Set the symbol for display purposes (CHANGE THIS)
-        unitsOneEthCanBuy = 10000000;                                      // Set the price of your token for the ICO (CHANGE THIS)
-        fundsWallet = msg.sender;                                    // The owner of the contract gets ETH
+        balances[msg.sender] = 21000000000000000000000000000;            
+        totalSupply = 21000000000000000000000000000;                       
+        name = "Bitcoin Protocol";                                  
+        decimals = 18;                                              
+        symbol = "BTP";                                             
+        unitsOneEthCanBuy = 10000000;                                   
+        fundsWallet = msg.sender;                                    
     }
 
     function() public payable{
